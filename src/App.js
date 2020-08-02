@@ -36,7 +36,10 @@ class App extends Component {
     return (
       <>
         <Header />
-        <Search profiles={profiles} setStateCallback={this.setStateCallback} />
+        <Search 
+          profiles={profiles} 
+          setStateCallback={this.setStateCallback} 
+        />
         <hr></hr>
         <Employees
           profiles={filteredProfiles}
