@@ -7,13 +7,17 @@ const Employees = ({ profiles, handleAlphaSort }) => {
     <>
       <div className="container" id="employees">
         <div className="row">
-          <div className="col-md-1"></div>
           <div className="col-md-2">Image</div>
-          <div className="col-md-2" onClick={handleAlphaSort}>Name</div>
+          <div 
+            className="col-md-2" 
+            onClick={handleAlphaSort}
+            id="nameLink"
+          >
+            Name
+          </div>
           <div className="col-md-2">Phone</div>
-          <div className="col-md-2">Email</div>
+          <div className="col-md-4">Email</div>
           <div className="col-md-2">DOB</div>
-          <div className="col-md-1"></div>
         </div>
 
         {profiles.length > 0 && profiles.map((profile, index) => (
